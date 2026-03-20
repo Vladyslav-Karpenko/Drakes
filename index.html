@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRAKES & Co. Studio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background-glow">
+      <div class="glow-purple"></div>
+      <div class="glow-blue"></div>
+    </div>
+
+    <!-- HERO -->
+    <section
+      class="min-h-screen flex flex-col justify-center items-center text-center fade-up"
+    >
+      <h1
+        class="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text"
+      >
+        DRAKES & Co. Studio
+      </h1>
+      <p class="text-gray max-w-xl text-lg mb-10">
+        Moderní weby a digitální řešení, která přinášejí výsledky.
+      </p>
+      <div class="flex gap-4">
+        <a href="#kontakt" class="btn-gradient">Kontakt</a>
+        <a href="#selected-work" class="btn-outline">Portfolio</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section fade-up">
+      <h2>Služby</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Landing Pages</h3>
+          <p class="text-gray">
+            Rychlé a moderní jednostránkové weby, které prodávají.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Webové aplikace</h3>
+          <p class="text-gray">
+            Komplexní webové systémy pro firmy, startupy a projekty.
+          </p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p class="text-gray">
+            Intuitivní a moderní design pro lepší zážitek uživatelů.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Integrace AI</h3>
+          <p class="text-gray">
+            Chytrá řešení s využitím umělé inteligence pro automatizaci.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Automatizace</h3>
+          <p class="text-gray">
+            Optimalizace procesů a workflow pro úsporu času a nákladů.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK (фейковые кейсы) -->
+    <section id="selected-work" class="section fade-up">
+      <h2>Vybrané projekty</h2>
+      <div class="grid-3">
+        <div class="card">
+          <!-- <h3>Fiktivní projekt 1</h3> -->
+          <p class="text-gray mb-2">Landing page pro moderní startup</p>
+          <a href="#" class="text-purple-400 hover:underline">Zobrazit demo</a>
+        </div>
+        <div class="card">
+          <!-- <h3>Fiktivní projekt 2</h3> -->
+          <p class="text-gray mb-2">Webová aplikace pro firemní procesy</p>
+          <a href="#" class="text-blue-400 hover:underline">Zobrazit demo</a>
+        </div>
+        <div class="card">
+          <!-- <h3>Fiktivní projekt 3</h3> -->
+          <p class="text-gray mb-2">Moderní design pro osobní značku</p>
+          <a href="#" class="text-purple-400 hover:underline">Zobrazit demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section id="founder" class="section fade-up">
+      <div class="flex flex-col md:flex-row items-center gap-10 card">
+        <img
+          src="src/img/me.jpg"
+          class="w-52 h-52 object-cover rounded-2xl border border-white/10 shadow-xl"
+        />
+        <div>
+          <h2>Founder</h2>
+          <p class="text-gray mb-2">Vladyslav Karpenko</p>
+          <p class="text-gray max-w-md">
+            V DRAKES & Co. Studio pomáhám firmám a jednotlivcům vytvořit moderní
+            weby, které nejen dobře vypadají, ale i fungují.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontakt" class="section text-center fade-up">
+      <h2>Kontakt</h2>
+      <p class="text-gray mb-6">Napiš mi a probereme tvůj projekt</p>
+      <div class="flex justify-center gap-6 flex-wrap">
+        <a
+          href="https://t.me/VladyslavKarpenko"
+          target="_blank"
+          class="btn-outline"
+          >Telegram</a
+        >
+        <a href="mailto:vladyslav.karpenko.cz@gmail.com" class="btn-gradient"
+          >Email</a
+        >
+      </div>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
