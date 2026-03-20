@@ -104,3 +104,25 @@ h2 {
   bottom: -100px;
   right: -100px;
 }
+.glow-text {
+  text-shadow:
+    0 0 8px rgba(139, 92, 246, 0.6),
+    0 0 16px rgba(79, 150, 255, 0.5),
+    0 0 24px rgba(139, 92, 246, 0.4);
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1.2s ease-out forwards;
+}

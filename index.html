@@ -22,9 +22,14 @@
       class="min-h-screen flex flex-col justify-center items-center text-center fade-up"
     >
       <h1
-        class="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text"
+        class="text-6xl md:text-8xl font-extrabold mb-6 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-blue-400 text-center animate-fade-up"
       >
-        DRAKES & Co. Studio
+        DRAKES <br />
+        <span
+          class="text-xl md:text-2xl font-light uppercase tracking-widest text-gray-300"
+        >
+          development studio
+        </span>
       </h1>
       <p class="text-gray max-w-xl text-lg mb-10">
         Moderní weby a digitální řešení, která přinášejí výsledky.
@@ -73,24 +78,45 @@
     </section>
 
     <!-- SELECTED WORK (фейковые кейсы) -->
-    <section id="selected-work" class="section fade-up">
-      <h2>Vybrané projekty</h2>
-      <div class="grid-3">
-        <div class="card">
-          <!-- <h3>Fiktivní projekt 1</h3> -->
-          <p class="text-gray mb-2">Landing page pro moderní startup</p>
-          <a href="#" class="text-purple-400 hover:underline">Zobrazit demo</a>
-        </div>
-        <div class="card">
-          <!-- <h3>Fiktivní projekt 2</h3> -->
-          <p class="text-gray mb-2">Webová aplikace pro firemní procesy</p>
-          <a href="#" class="text-blue-400 hover:underline">Zobrazit demo</a>
-        </div>
-        <div class="card">
-          <!-- <h3>Fiktivní projekt 3</h3> -->
-          <p class="text-gray mb-2">Moderní design pro osobní značku</p>
-          <a href="#" class="text-purple-400 hover:underline">Zobrazit demo</a>
-        </div>
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10">Ukázky projektů</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- CARD 1 -->
+        <a
+          href="#"
+          class="group block bg-neutral-900 rounded-xl overflow-hidden hover:scale-105 transition"
+        >
+          <img src="/demo/res.png" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Restaurant Website</h3>
+            <p class="text-sm text-gray-400">Modern landing page</p>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a
+          href="#"
+          class="group block bg-neutral-900 rounded-xl overflow-hidden hover:scale-105 transition"
+        >
+          <img src="/demo/barber.png" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Barber Shop</h3>
+            <p class="text-sm text-gray-400">Booking website</p>
+          </div>
+        </a>
+
+        <!-- CARD 3 -->
+        <a
+          href="#"
+          class="group block bg-neutral-900 rounded-xl overflow-hidden hover:scale-105 transition"
+        >
+          <img src="/demo/fitness.png" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Fitness Coach</h3>
+            <p class="text-sm text-gray-400">Personal brand site</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -105,8 +131,8 @@
           <h2>Founder</h2>
           <p class="text-gray mb-2">Vladyslav Karpenko</p>
           <p class="text-gray max-w-md">
-            V DRAKES & Co. Studio pomáhám firmám a jednotlivcům vytvořit moderní
-            weby, které nejen dobře vypadají, ale i fungují.
+            V <strong>DRAKES Studio</strong> tvoříme weby, které kombinují
+            design, funkčnost a výsledky pro vaše podnikání.
           </p>
         </div>
       </div>
