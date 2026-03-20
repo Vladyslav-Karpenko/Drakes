@@ -222,23 +222,132 @@
       </div>
     </section>
 
-    <!-- FOUNDER -->
-    <section id="founder" class="section fade-up">
-      <div class="flex flex-col md:flex-row items-center gap-10 card">
-        <img
-          src="src/img/me.jpg"
-          class="w-52 h-52 object-cover rounded-2xl border border-white/10 shadow-xl"
-        />
-        <div>
-          <h2>Founder</h2>
-          <p class="text-gray mb-2">Vladyslav Karpenko</p>
-          <p class="text-gray max-w-md">
-            V <strong>DRAKES Studio</strong> tvoříme weby, které kombinují
-            design, funkčnost a výsledky pro vaše podnikání.
-          </p>
+    <!-- PREMIUM BENEFITS BLOCK -->
+    <section id="benefits" class="section relative py-32">
+      <!-- Фоновые мягкие сияния -->
+      <div class="absolute inset-0 -z-20">
+        <div
+          class="w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl absolute top-0 -left-32 animate-pulse-slow"
+        ></div>
+        <div
+          class="w-96 h-96 bg-blue-500/20 rounded-full blur-3xl absolute bottom-0 -right-32 animate-pulse-slow delay-500"
+        ></div>
+      </div>
+
+      <div class="max-w-6xl mx-auto text-center md:text-left">
+        <h2
+          class="text-4xl md:text-5xl font-extrabold mb-12 glow-text text-center"
+        >
+          Proč mít vlastní web je klíčové pro váš byznys v Praze
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Item 1 -->
+          <div
+            class="fade-up p-6 bg-black/70 rounded-2xl shadow-[0_0_60px_rgba(0,255,255,0.2)] hover:shadow-[0_0_80px_rgba(0,255,255,0.4)] transition-all duration-500"
+          >
+            <div class="mb-4 flex justify-center md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-cyan-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m4 4h-1v-4h-1m4 4h-1v-4h-1M12 20h.01M12 4h.01"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-300">
+              Oslovte nové klienty, prezentujte služby a budujte důvěru
+              prostřednictvím profesionálního webu.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="fade-up p-6 bg-black/70 rounded-2xl shadow-[0_0_60px_rgba(0,255,255,0.2)] hover:shadow-[0_0_80px_rgba(0,255,255,0.4)] transition-all duration-500 delay-200"
+          >
+            <div class="mb-4 flex justify-center md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-blue-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 10h18M3 14h18M3 18h18"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-300">
+              Moderní web je vizitkou vaší firmy, která vám umožní vyniknout nad
+              konkurencí v Praze.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="fade-up p-6 bg-black/70 rounded-2xl shadow-[0_0_60px_rgba(0,255,255,0.2)] hover:shadow-[0_0_80px_rgba(0,255,255,0.4)] transition-all duration-500 delay-400"
+          >
+            <div class="mb-4 flex justify-center md:justify-start">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 text-teal-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 17v-4h6v4M12 3v4M3 12h18"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-300">
+              Web umožňuje integrace, online formuláře a AI automatizaci, což
+              šetří čas a zvyšuje efektivitu.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center md:text-center">
+          <a href="#kontakt" class="btn-gradient">Chci vlastní web</a>
         </div>
       </div>
     </section>
+
+  <!-- FOUNDER -->
+<section id="founder" class="section fade-up">
+  <div class="flex flex-col md:flex-row items-center gap-10 card">
+    <img
+      src="src/img/me.jpg"
+      class="w-52 h-52 object-cover rounded-2xl border border-white/10 shadow-xl"
+    />
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">Founder</h2>
+      <p class="text-gray mb-2 text-lg">Vladyslav Karpenko</p>
+      <p class="text-gray max-w-md text-lg">
+        V <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-bold">
+          DRAKES Studio
+        </span> tvoříme weby, které kombinují
+        <span class="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold">
+          design, funkčnost a výsledky
+        </span> pro vaše podnikání.
+      </p>
+    </div>
+  </div>
+</section>
 
     <!-- CONTACT -->
     <section id="kontakt" class="section text-center fade-up">

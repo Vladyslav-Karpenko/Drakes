@@ -1,3 +1,4 @@
+/* style.css */
 @import "tailwindcss";
 
 body {
@@ -10,16 +11,18 @@ a {
   text-decoration: none;
 }
 
+/* ================= Fade-up ================= */
 .fade-up {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
 }
 .fade-up.active {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* ================= Buttons ================= */
 .btn-gradient {
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
@@ -42,31 +45,46 @@ a {
   color: black;
 }
 
+/* ================= Cards ================= */
 .card {
   padding: 2rem;
   border-radius: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition:
-    transform 0.4s,
-    box-shadow 0.4s;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(155, 93, 229, 0.4);
 }
 
+/* ================= Grid ================= */
 .grid-3 {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* ================= Text ================= */
 .text-gray {
   color: rgba(255, 255, 255, 0.6);
 }
+.glow-text {
+  text-shadow:
+    0 0 5px rgba(0,255,255,0.6),
+    0 0 15px rgba(0,200,255,0.5),
+    0 0 25px rgba(0,255,255,0.3);
+}
+.highlight {
+  background: linear-gradient(90deg, #00f0ff, #00aaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
 
+/* ================= Sections ================= */
 .section {
   padding: 6rem 1.5rem;
   max-width: 1200px;
@@ -78,6 +96,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
+/* ================= Background Glow ================= */
 .background-glow {
   position: fixed;
   top: 0;
@@ -94,39 +113,10 @@ h2 {
   opacity: 0.2;
   filter: blur(200px);
 }
-.glow-purple {
-  background: purple;
-  top: -100px;
-  left: -100px;
-}
-.glow-blue {
-  background: blue;
-  bottom: -100px;
-  right: -100px;
-}
-.glow-text {
-  text-shadow:
-    0 0 8px rgba(139, 92, 246, 0.6),
-    0 0 16px rgba(79, 150, 255, 0.5),
-    0 0 24px rgba(139, 92, 246, 0.4);
-}
+.glow-purple { background: purple; top: -100px; left: -100px; }
+.glow-blue { background: blue; bottom: -100px; right: -100px; }
 
-/* Fade-up animation */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fadeUp 1.2s ease-out forwards;
-}
-
+/* ================= Cursor typing ================= */
 .cursor {
   display: inline-block;
   margin-left: 2px;
@@ -135,13 +125,15 @@ h2 {
   color: #fff;
 }
 @keyframes blink {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-  25%,
-  75% {
-    opacity: 0;
-  }
+  0%,50%,100% { opacity: 1; }
+  25%,75% { opacity: 0; }
+}
+
+/* ================= Keyframes ================= */
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  animation: fadeUp 1.2s ease-out forwards;
 }
